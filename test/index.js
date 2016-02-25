@@ -12,7 +12,7 @@ var test = require('tape')
 
 test('should work', function (t) {
   t.deepEqual(check('left'), {left: -60, top: 5})
-  t.deepEqual(check('right'), {left: 140, top: 5})
+  t.deepEqual(check('right'), {left: 90, top: 5})
   t.deepEqual(check('top'), {left: 15, top: -70})
   t.deepEqual(check('bottom'), {left: 15, top: 80})
 
