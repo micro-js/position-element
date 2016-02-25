@@ -8,7 +8,11 @@
   "scripts": {
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@f/apply-styles": "^1.0.1",
+    "@f/compute-placement": "^1.0.0",
+    "@f/element-rect": "^1.0.0"
+  },
   "devDependencies": {
     "hihat": "^2.6.4",
     "tap-dev-tool": "^1.3.0",
