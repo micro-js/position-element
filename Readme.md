@@ -20,16 +20,18 @@ var position = require('@f/position-element')
 function positionTooltip (tooltip, target, placement) {
   position(tooltip, target, placement)
 }
-
 ```
 
 ## API
 
-### positionElement(arg)
+### positionElement(node, near, placement, relative, space)
 
-- `arg` -
+- `node` - The DOM node you want to position
+- `near` - The DOM node you want to position `node` relative to
+- `placement` - One of `top/right/bottom/left`. How to position `node` relative to `near`. (e.g. `top` aligns the bottom edge of `node` with the top edge of `near`, horizontally centered)
+- `space` - Optional. Defaults to `0`. Specifies how much padding to add
 
-**Returns:**
+**Returns:** `void`
 
 ## License
 
