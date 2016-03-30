@@ -27,9 +27,10 @@ function positionTooltip (tooltip, target, placement) {
 ### positionElement(node, near, placement, relative, space)
 
 - `node` - The DOM node you want to position
-- `near` - The DOM node you want to position `node` relative to
 - `placement` - One of `top/right/bottom/left`. How to position `node` relative to `near`. (e.g. `top` aligns the bottom edge of `node` with the top edge of `near`, horizontally centered)
-- `space` - Optional. Defaults to `0`. Specifies how much padding to add
+- `options` - Optional. Options object containing:
+  * `near` - The DOM node you want to position `node` relative to. If not specified, `node`'s offsetParent is used.
+  * `space` - Optional. Defaults to `0`. Specifies how much padding to add
 
 **Returns:** `void`
 

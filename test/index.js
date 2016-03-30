@@ -34,7 +34,7 @@ function check (placement, space) {
   var near = $('<div style="position:relative;width:50px;height:50px;left:40px;top:30px;"></div><div style="width:100px;height:100px;position:absolute"></div>')
   var node = near.nextSibling
 
-  position(node, near, placement, space)
+  position(node, placement, {near: near, space: space})
   return getStyle(node)
 }
 
