@@ -24,7 +24,7 @@ function positionTooltip (tooltip, target, placement) {
 
 ## API
 
-### positionElement(node, near, placement, relative, space)
+### positionElement(node, placement, options)
 
 - `node` - The DOM node you want to position
 - `placement` - One of `top/right/bottom/left`. How to position `node` relative to `near`. (e.g. `top` aligns the bottom edge of `node` with the top edge of `near`, horizontally centered)
